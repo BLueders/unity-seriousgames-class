@@ -12,7 +12,7 @@ public class CharacterController2D : MonoBehaviour
 
     protected Rigidbody2D rb2d;
 
-    void Start()
+    protected virtual void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
