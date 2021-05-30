@@ -5,21 +5,26 @@ using UnityEngine.UI;
 
 public class HeartsUI : MonoBehaviour
 {
-    private static HeartsUI instance;
     public Image[] hearts;
     private int heartsVisible;
+    private static HeartsUI instace;
 
     void Start()
     {
-        instance = this;
+        instace = this;
         heartsVisible = hearts.Length;
     }
 
     public static void RemoveHeart()
     {
-        instance.heartsVisible--;
-        if(instance.heartsVisible >= 0) {
-            instance.hearts[instance.heartsVisible].enabled = false;
+        instace._RemoveHeart();
+    }
+
+    private void _RemoveHeart()
+    {
+        heartsVisible--;
+        if(heartsVisible >= 0) {
+            hearts[heartsVisible].enabled = false;
         }
     }
 }
