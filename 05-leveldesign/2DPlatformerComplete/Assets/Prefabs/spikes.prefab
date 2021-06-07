@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2689548257782753902}
   - component: {fileID: -1773020997335065392}
   - component: {fileID: 7048506881043967107}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410161681144774552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.56, y: 1.48, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,7 +106,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -121,8 +121,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.125, y: 0.0625}
-      - {x: -0.5, y: -0.125}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: 0.0625}
+    - - {x: -0.122403115, y: -0.090716094}
+      - {x: -0.37015584, y: -0.21848777}
+      - {x: -0.37015584, y: -0.49480623}
+      - {x: 0.4298842, y: -0.5}
+      - {x: 0.42469043, y: -0.13226622}

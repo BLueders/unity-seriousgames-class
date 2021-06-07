@@ -9,21 +9,21 @@ public class HeartsUI : MonoBehaviour
     public GameObject heartsPanel;
     public Image[] hearts;
     private int heartsVisible; 
-    private static HeartsUI instace;
+    private static HeartsUI instance;
 
-    void Start()
+    void Awake()
     {
-        instace = this;
+        instance = this;
     }
 
     public static void SetLives(int lives)
     {
-        instace._SetLives(lives);
+        instance._SetLives(lives);
     }
 
     public static void RemoveHeart()
     {
-        instace._RemoveHeart();
+        instance._RemoveHeart();
     }
 
     private void _SetLives(int lives)

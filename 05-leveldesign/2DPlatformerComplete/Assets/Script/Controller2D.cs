@@ -32,7 +32,6 @@ public abstract class Controller2D : MonoBehaviour
         Debug.DrawLine(rayStart, rayStart + Vector3.down * groundRayLength * 2, Color.red);
         Debug.DrawLine(rayStartLeft, rayStartLeft + Vector3.down * groundRayLength * 2, Color.red);
         Debug.DrawLine(rayStartRight, rayStartRight + Vector3.down * groundRayLength * 2, Color.red);
-
         if (hit.collider != null)
         {
             grounded = true;
@@ -51,6 +50,7 @@ public abstract class Controller2D : MonoBehaviour
             onMovingPlatform = hitRight.collider.gameObject.GetComponent<MovingPlatform>();
             return true;
         }
+        onMovingPlatform = null;
         grounded = false;
         return false;
     }
